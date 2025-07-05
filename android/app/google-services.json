@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1012832325519",
+    "project_id": "export-to-excel-4ffee",
+    "storage_bucket": "export-to-excel-4ffee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012832325519:android:c4cebcdf9384219ab985fa",
+        "android_client_info": {
+          "package_name": "com.favian.export_to_excel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7FjonyhQTAsKOdqztiUjqaAiVTTUVb5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
