@@ -28,4 +28,13 @@ class Student {
       'phoneNumber': phoneNumber,
     };
   }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'name': name,
+      'email': email,
+      'phoneNumber': phoneNumber,
+    };
+  }
 }

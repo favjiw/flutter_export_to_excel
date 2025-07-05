@@ -37,6 +37,20 @@ class _HomeViewState extends State<HomeView> {
     }
   }
 
+  Future<void> _exportToExcel() async {
+    try {
+      await exportController.exportToExcel(students);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Exported successfully')),
+      );
+    } catch (e) {
+      print("Error exporting to Excel: $e");
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to export data')),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,8 +58,10 @@ class _HomeViewState extends State<HomeView> {
         title: Text('Student Data Export'),
         actions: [
           IconButton(
-            icon: Icon(Icons.refresh),
-            onPressed: () {},
+            icon: Icon(Icons.document_scanner_rounded),
+            onPressed: () {
+              _exportToExcel();
+            },
           ),
         ],
       ),
